@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download PDF</title>
+    <style>
+        /* Basic Reset for margins */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full height background with a background image */
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('background.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
+            margin: 0;
+            color: #fff;
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Container for the content */
+        .container {
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Styling the heading */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Styling the download button */
+        button {
+            background-color: #FF6347; /* Tomato red */
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            margin-top: 2%;
+        }
+
+        /* Hover effect for button */
+        button:hover {
+            background-color: #e5533d;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            button {
+                font-size: 16px;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Close Quarters Urban Area Combat Theory By M.Hammad.</h1>
+        <h3>Get Your Free PDF Now!</h3>
+        <button onclick="downloadPDF()">Download PDF</button>
+    </div>
+
+    <script>
+        function downloadPDF() {
+            window.location.href = 'Close Quarters Urban Area Combat Theory By Muhammad Hammad.pdf'; /* Your PDF file name here */
+        }
+    </script>
+</body>
+</html>
