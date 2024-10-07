@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download PDF</title>
+    <title>Close Quarters Urban Area Combat Theory By M.Hammad.</title>
+    <link rel="icon" href="palmtree.png" type="image/png">
     <style>
         /* Basic Reset for margins */
         * {
@@ -19,7 +20,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: url('background.jpg') no-repeat center center/cover;
+            background: url('back.jpeg') no-repeat top center/cover;
             background-attachment: fixed;
             margin: 0;
             color: #fff;
@@ -28,7 +29,7 @@
 
         /* Container for the content */
         .container {
-            background-color: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+            background-color: rgba(247, 0, 255, 0.5); /* Transparent black overlay */
             padding: 40px;
             border-radius: 10px;
             text-align: center;
@@ -43,7 +44,7 @@
 
         /* Styling the download button */
         button {
-            background-color: #FF6347; /* Tomato red */
+            background-color: #71dbff; /* Tomato red */
             color: white;
             padding: 15px 30px;
             font-size: 18px;
@@ -60,6 +61,19 @@
             background-color: #e5533d;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
+        /* Copyright styling */
+        .copyright {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 14px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5); /* Optional: transparent background */
+            padding: 5px 10px;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
 
         /* Responsive design */
         @media (max-width: 768px) {
@@ -71,6 +85,12 @@
                 font-size: 16px;
                 padding: 12px 25px;
             }
+            body {
+            
+            background: url('back_m.jpeg') no-repeat top center/cover;
+            
+            }
+
         }
     </style>
 </head>
@@ -80,6 +100,10 @@
         <h3>Get Your Free PDF Now!</h3>
         <button onclick="downloadPDF()">Download PDF</button>
     </div>
+    <div class="copyright">
+        &copy; Fan of the McAFee software.
+    </div>
+    
 
     <script>
         function downloadPDF() {
