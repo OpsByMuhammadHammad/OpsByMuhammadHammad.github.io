@@ -1,2 +1,1 @@
-# Hammad.github.io
-King of Islamabad
+# King of Islamabad
